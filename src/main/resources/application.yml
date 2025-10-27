@@ -2,11 +2,13 @@
 spring:
   application:
     name: lab-4-subject
+  config:
+    import: "optional:configserver:http://localhost:8001"
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://localhost:8010/eureka/
 
 words: I,You,He,She,It
 
