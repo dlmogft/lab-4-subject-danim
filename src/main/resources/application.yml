@@ -4,13 +4,15 @@ spring:
     name: lab-4-subject
   config:
     import: "optional:configserver:http://localhost:8001"
+  profiles:
+    active: subject
 
 # eureka:
 #   client:
 #     serviceUrl:
 #       defaultZone: http://localhost:8010/eureka/
 
-words: I,You,He,She,It
+# words: I,You,He,She,It
 
 server:
   port: ${PORT:${SERVER_PORT:0}}
